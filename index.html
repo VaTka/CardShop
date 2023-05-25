@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+</head>
+<body class="bg-[#FCF7E6] flex items-center justify-center">
+
+<div class="w-full grid grid-cols-10 auto-cols-max">
+
+    <div class="flex justify-end col-start-1 my-14 max-h-11">
+        <img src="img/logo.svg" alt="logo">
+    </div>
+
+    <div class="col-start-2 col-span-8 h-max my-12">
+        <header class="w-full flex justify-between">
+            <div class="flex gap-2 items-start w-fit">
+                <div class="max-w-[200px] text-3xl md:text-5xl font-bold break-words w-fit">VooDoo Test</div>
+            </div>
+
+            <div class="flex items-center text-black font-spacegrotesk gap-4 md:gap-12 text-[14px] md:text-[20px] h-fit whitespace-nowrap">
+                <a href="#" class="block hover:text-[#ED5E21] duration-500">About Us</a>
+                <a href="#" class="bg-black text-white p-3 rounded-l block h-fit hover:bg-[#ED5E21] hover:text-black duration-500 ">Sign-up</a>
+            </div>
+        </header>
+    </div>
+
+    <hr class="row-start-2 col-span-10 w-full h-[1px] flex-grow border-[1px] border-black">
+
+    <div class="relative row-start-3 col-start-2 col-span-8 font-spacegrotesk mt-24 mb-12">
+        <div class="bg-black text-white flex justify-between items-center p-6 rounded cursor-pointer hover:text-[#ED5E21] duration-500" id="dropdownBtn">
+            <div class="flex gap-12">
+                <div class="flex gap-2 items-center">
+                    <img src="img/alert-circle.svg" alt="alert">
+                    <div class="font-bold">ALPHA</div>
+                </div>
+                <div class="text-[12px] leading-6 text-ellipsis">Important info regarding our service</div>
+            </div>
+            <div>
+                <img src="img/chevron-down.svg" alt="drop-down">
+            </div>
+        </div>
+        <div class="absolute hidden w-full bg-black text-white p-6 z-10 uppercase justify-center" id="dropdownMenu">hidden information</div>
+    </div>
+
+    <div class="row-start-4 col-start-2 col-span-8 font-spacegrotesk grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-cols-1 auto-cols-max gap-4" id="list"></div>
+
+    <div class="flex flex-col items-center row-start-5 col-start-2 col-span-8 font-spacegrotesk mt-36 mb-28">
+        <div class="mb-6">Be the first one to know when we launch our beta!</div>
+        <div class="flex gap-3 max-w-[500px]">
+            <div class="w-max">
+                <input type="text" placeholder="E-mail"
+                       class="px-4 py-3 text-black font-bold placeholder-black rounded w-full">
+            </div>
+            <a href="#" class="block px-4 py-3 bg-[#ED5E21] font-bold rounded hover:bg-black hover:text-white duration-500 whitespace-nowrap">Sign-up</a>
+        </div>
+    </div>
+
+    <footer class="col-start-0 col-span-10 h-max bg-white border-t-2 border-black font-spacegrotesk">
+        <div class="flex flex-col gap-12 items-start justify-around mx-12 my-20 md:flex-row md:gap-0 md:mx-32">
+            <div class="order-last md:order-first"><img src="img/Logomark.svg" alt="logo"/></div>
+            <div class="flex flex-col font-bold font-[14px] gap-1">
+                <a href="#">FAQ</a>
+                <a href="#">RETURNS</a>
+                <a href="#">CONTACT</a>
+            </div>
+            <div class="flex flex-col font-bold font-[14px] gap-1">
+                <a href="#">TERMS & CONDITIONS</a>
+                <a href="#">PRIVACY POLICY</a>
+                <a href="#">COOKIE POLICY</a>
+                <a href="#">COOKIE SETTINGS</a>
+            </div>
+            <div class="flex flex-col font-bold font-[14px] gap-1">
+                <a href="#">ABOUT SECOND CHANCE</a>
+                <a href="#">CAREER</a>
+                <a href="#">FACEBOOK</a>
+                <a href="#">INSTAGRAM</a>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script src="src/script.js"></script>
+
+</body>
+</html>
